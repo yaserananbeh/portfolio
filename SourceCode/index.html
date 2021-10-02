@@ -19,24 +19,24 @@
     <div class="headerContainer">
       <nav>
         <ul>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#skillSection">Skills</a></li>
+          <li><a href="#serviceSection">Services</a></li>
         </ul>
       </nav>
       <div class="logo">
-        <a href="">
+        <a href="#main">
           <img src="./assets/images/mylogofinal.png" alt="Logo">
         </a>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#projectSection">Projects</a></li>
+          <li><a href="#footer">Contact Me</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
+  <main id="main">
     <section class="heroImageContainer">
       <div class="heroImageContent">
         <h2>Hey, I'm Yaser Al-Ananbeh </h2>
@@ -44,16 +44,16 @@
       </div>
     </section>
 
-    <section class="skillSection">
+    <section class="skillSection" id="skillSection">
       <h2>My skills</h2>
       <div class="skillsContainer">
-        <div class="oneSkillContainer">Web Design</div>
-        <div class="oneSkillContainer">Modern Techniques</div>
-        <div class="oneSkillContainer">Maintain Products </div>
-        <div class="oneSkillContainer">Big Projects</div>
+        <div class="oneSkillContainer">HTML & CSS</div>
+        <div class="oneSkillContainer">JAVASCRIPT</div>
+        <div class="oneSkillContainer">PHP</div>
+        <div class="oneSkillContainer">REACT JS & LARAVEL</div>
       </div>
     </section>
-    <section class="projectSection">
+    <section class="projectSection" id="projectSection">
       <h2>Project I've Contributed In</h2>
       <div class="projectsContainer">
         <div class="oneProjectCard">
@@ -148,7 +148,7 @@
         </div>
       </div>
     </section>
-    <section class="serviceSection">
+    <section class="serviceSection" id="serviceSection">
       <h2>My Services</h2>
       <div class="servicesContainer">
         <div class="oneServiceCard">
@@ -198,7 +198,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonialSection">
+    <section class="testimonialSection" id="testimonialSection">
       <h2>Testimonials</h2>
       <div class="nevegatorCircles">
         <i class="fas fa-circle firstCircle"></i>
@@ -213,7 +213,7 @@
           <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est, perferendis nam sint laudantium omnis
             soluta eveniet in quibusdam nulla!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est, perferendis nam sint laudantium omnis
-            soluta eveniet in quibusdam nulla!"</p>
+            soluta eveniet in quibusdam nulla! "</p>
         </div>
         <div class="testimonial testimonial2  active">
           <img src="./assets/images/personPng.png" alt="personImage">
@@ -232,21 +232,21 @@
 
     </section>
   </main>
-  <footer>
+  <footer id="footer">
     <div class="footerContainer">
       <div class="aboutSection">
         <div class="title">
           <h5>About Me</h5>
         </div>
-        <div class="logo">
-          <img src="./assets/images/mylogofinal.png" alt="">
-          <!-- <div class="myName"> -->
+        <div class="aboutMeContent">
+          <div class="logo">
+            <img src="./assets/images/mylogofinal.png" alt="">
             <p>Yaser Al-Ananbeh</p>
-          <!-- </div> -->
-        </div>
-        
-        <div class="description">
-          <p>Web Developer Working Mainly To Create A Great Web Applications</p>
+          </div>
+
+          <div class="description">
+            <p>Web Developer Working Mainly To Create A Great Web Applications</p>
+          </div>
         </div>
       </div>
       <div class="contactMeSection">
@@ -270,14 +270,17 @@
           <h5>Follow Me</h5>
         </div>
         <div class="iconsContainer">
-          <a href="">
+          <a href="https://www.linkedin.com/in/yaser-al-ananbeh/" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="">
+          <a href="https://web.facebook.com/yaser.ananbeh/" target="_blank">
             <i class="fab fa-facebook-square"></i>
           </a>
-          <a href="">
+          <a href="https://github.com/yaserananbeh" target="_blank">
             <i class="fab fa-github-square"></i>
+          </a>
+          <a href="mailto:yaser.alananbeh@gmail.com" target="_blank">
+            <i class="fas fa-at"></i>
           </a>
         </div>
       </div>
