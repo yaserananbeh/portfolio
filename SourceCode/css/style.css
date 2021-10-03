@@ -419,4 +419,20 @@ footer > div > div.followMe{
 .followMe .iconsContainer i.fa-at:hover{
   color: tomato	;
 }
-
+/* ---------------------------------------- */
+@media (max-width:576px){
+  footer .footerContainer{
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  footer .footerContainer > div{
+    border:0;
+    border-bottom: 2px solid #d7d9ce;
+  }
+  footer .footerContainer > div.followMe{
+    border:0;
+  }
+  footer .footerContainer {
+    /* --------------- */
+  }
+}
