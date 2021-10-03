@@ -35,3 +35,19 @@ ThirdCircle.addEventListener("click" ,()=>{
     testimonial3.className="testimonial testimonial3 active";
 
 })
+/****************************************** */
+/************* Burger Menu ************** */
+/****************************************** */
+const toggleButton = document.getElementById('burgerMenu')
+const header=document.getElementsByTagName('header')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const navbarLinks1 = document.getElementsByClassName('navbar-links')[1]
+
+// console.log(toggleButton)
+
+header.addEventListener('click', () => {
+    // console.log(toggleButton);
+    // console.log("Yaser");
+    navbarLinks.classList.toggle('active')
+    navbarLinks1.classList.toggle('active')
+})
