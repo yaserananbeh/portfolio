@@ -71,7 +71,7 @@ header .headerContainer nav ul li a:hover {
 .heroImageContainer {
   min-width: fit-content;
   min-height: 90vh;
-  background: url("https://wallpaperboat.com/wp-content/uploads/2019/10/programming-14.jpg")
+  background: url("../assets/images/heroImage.jpg")
     center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -288,7 +288,7 @@ section.testimonialSection .secondCircle {
   grid-column: 3/4;
   grid-row: 1/2;
 }
-.testimonialsContainer .testimonial > h5,
+.testimonialsContainer .testimonial > h3,
 .testimonialsContainer .testimonial > p {
   display: none;
   transition: 0.3s;
@@ -299,12 +299,12 @@ section.testimonialSection .secondCircle {
   text-overflow: ellipsis;
 }
 
-.testimonialsContainer .testimonial.active > h5,
+.testimonialsContainer .testimonial.active > h3,
 .testimonialsContainer .testimonial.active > p {
   display: inline-block;
   transition: 1s;
 }
-.testimonial h5 {
+.testimonial h3 {
   margin: 1vh auto;
   text-transform: uppercase;
   font-size: 2.5em;
@@ -379,7 +379,7 @@ footer > div > div.followMe {
   margin: 1vh 0;
   border: none;
   color: #d7d9ce;
-  background-color: rgba(17, 157, 164, 0.795);
+  background-color: #222222;
 
   border-radius: 5px;
 }
@@ -506,7 +506,7 @@ footer > div > div.followMe {
   footer .footerContainer > div.followMe {
     border: 0;
   }
-  footer .footerContainer > div.followMe h5 {
+  footer .footerContainer > div.followMe h3 {
     margin-bottom: 4vh;
   }
   footer .footerContainer .aboutMeContent {
