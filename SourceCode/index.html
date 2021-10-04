@@ -15,6 +15,7 @@
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,16 +54,16 @@
     <section class="skillSection" id="skillSection">
       <h2>My skills</h2>
       <div class="skillsContainer">
-        <div class="oneSkillContainer">HTML & CSS</div>
-        <div class="oneSkillContainer">JAVASCRIPT</div>
-        <div class="oneSkillContainer">PHP</div>
-        <div class="oneSkillContainer">REACT JS & LARAVEL</div>
+        <div class="oneSkillContainer" data-aos="fade-right" data-aos-duration="2000">HTML & CSS</div>
+        <div class="oneSkillContainer" data-aos="fade-right" data-aos-duration="2000">JAVASCRIPT</div>
+        <div class="oneSkillContainer" data-aos="fade-left" data-aos-duration="2000">PHP</div>
+        <div class="oneSkillContainer" data-aos="fade-left" data-aos-duration="2000">REACT JS & LARAVEL</div>
       </div>
     </section>
     <section class="projectSection" id="projectSection">
       <h2>Projects</h2>
       <div class="projectsContainer">
-        <div class="oneProjectCard first">
+        <div class="oneProjectCard first" data-aos="fade-up"  data-aos-duration="2000">
           <a href=" https://phoenixsquad.github.io/wardrobe/" target="_blank" rel="noopener noreferrer">
             <div class="imageContainer">
               <img src="./assets/images/wardrobe.png" alt="projectImage" class="projectImage">
@@ -77,7 +78,7 @@
             </div>
           </a>
         </div>
-        <div class="oneProjectCard second">
+        <div class="oneProjectCard second" data-aos="fade-up" data-aos-duration="2000">
           <a href="https://home-gym.netlify.app/" target="_blank"
           rel="noopener noreferrer">
             <div class="imageContainer">
@@ -93,7 +94,7 @@
             </div>
           </a>
         </div>
-        <div class="oneProjectCard third">
+        <div class="oneProjectCard third" data-aos="fade-up" data-aos-duration="2000">
           <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
             <div class="imageContainer">
               <img src="./assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
@@ -108,7 +109,7 @@
             </div>
           </a>
         </div>
-        <div class="oneProjectCard">
+        <div class="oneProjectCard" data-aos="fade-up" data-aos-duration="2000">
           <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
             <div class="imageContainer">
               <img src="./assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
@@ -123,7 +124,7 @@
             </div>
           </a>
         </div>
-        <div class="oneProjectCard">
+        <div class="oneProjectCard" data-aos="fade-up" data-aos-duration="2000">
           <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
             <div class="imageContainer">
               <img src="./assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
@@ -138,7 +139,7 @@
             </div>
           </a>
         </div>
-        <div class="oneProjectCard">
+        <div class="oneProjectCard" data-aos="fade-up" data-aos-duration="2000">
           <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
             <div class="imageContainer">
               <img src="./assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
@@ -158,7 +159,7 @@
     <section class="serviceSection" id="serviceSection">
       <h2>Services</h2>
       <div class="servicesContainer">
-        <div class="oneServiceCard">
+        <div class="oneServiceCard" data-aos="zoom-out" data-aos-duration="2000">
           <a href="#" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-pen-nib"></i>
             <div class="textContainer">
@@ -171,7 +172,7 @@
             </div>
           </a>
         </div>
-        <div class="oneServiceCard">
+        <div class="oneServiceCard" data-aos="zoom-out" data-aos-duration="2000">
           <a href="#" target="_blank" rel="noopener noreferrer">
             <i class="far fa-keyboard"></i>
             <div class="textContainer">
@@ -184,7 +185,7 @@
             </div>
           </a>
         </div>
-        <div class="oneServiceCard">
+        <div class="oneServiceCard" data-aos="zoom-out" data-aos-duration="2000">
           <a href="#" target="_blank" rel="noopener noreferrer"> 
             <i class="fas fa-tools"></i>
             <div class="textContainer">
@@ -289,6 +290,11 @@
     </div>
   </footer>
   <script src="./js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
