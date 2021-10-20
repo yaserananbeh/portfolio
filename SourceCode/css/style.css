@@ -642,3 +642,17 @@ footer > div > div.followMe {
 }
 /* ------------------------------------- */
 /* ---------------light mode button--------------- */
+main{
+  position: relative;
+}
+section>.lightDarkBtn{
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: x-large;
+  transition: 0.3s;
+  cursor: pointer;
+}

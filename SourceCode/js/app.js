@@ -59,15 +59,21 @@ const darkLightBtn=document.getElementsByClassName("lightDarkBtn")[0]
 const lightCssLink=document.getElementById("lightCssLink")
 const navLogo=document.getElementById("navLogo")
 darkLightBtn.addEventListener("click",function(){
-    if(darkLightBtn.innerHTML=="light"){
+    if(darkLightBtn.classList=="lightDarkBtn light"){
         lightCssLink.href="./css/light.css"
         navLogo.src="./assets/images/Mylogo.png"
-        darkLightBtn.innerHTML="dark";
+        // darkLightBtn.style.transform = "rotate(180deg)"
+        darkLightBtn.style.transform = "scaleX(-1)"
+        darkLightBtn.style.color = "#00c2cb"
+        darkLightBtn.classList="lightDarkBtn dark";
         
     }
     else{
         lightCssLink.href="./css/style.css"
         navLogo.src="./assets/images/mylogofinal.png"
-        darkLightBtn.innerHTML="light";
+        // darkLightBtn.style.transform = "rotate(0deg)"
+        darkLightBtn.style.transform = "scaleX(1)"
+        darkLightBtn.style.color = "white"
+        darkLightBtn.classList="lightDarkBtn light";
     }
 })
