@@ -51,3 +51,23 @@ header.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
     navbarLinks1.classList.toggle('active')
 })
+
+/****************************************** */
+/************* Light\Dark toggle ************** */
+/****************************************** */
+const darkLightBtn=document.getElementsByClassName("lightDarkBtn")[0]
+const lightCssLink=document.getElementById("lightCssLink")
+const navLogo=document.getElementById("navLogo")
+darkLightBtn.addEventListener("click",function(){
+    if(darkLightBtn.innerHTML=="light"){
+        lightCssLink.href="./css/light.css"
+        navLogo.src="./assets/images/Mylogo.png"
+        darkLightBtn.innerHTML="dark";
+        
+    }
+    else{
+        lightCssLink.href="./css/style.css"
+        navLogo.src="./assets/images/mylogofinal.png"
+        darkLightBtn.innerHTML="light";
+    }
+})
