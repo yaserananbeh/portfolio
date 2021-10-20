@@ -1,0 +1,62 @@
+body {
+  background-color: #d7d9ce;
+}
+header {
+    background-color: #d7d9ce;
+    min-width: fit-content;
+    width: 100%;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 5px 0 15px black;
+  }
+  header .headerContainer nav ul li a{
+      color: #222222;
+      border-bottom: #d7d9ce;
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
+  }
+  header .headerContainer nav ul li a:hover {
+    color: #222222;
+    border-bottom: #00c2cb;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+  }
+  header .logo {
+    border-bottom: #d7d9ce;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+  }
+
+  .skillSection,
+.projectSection,
+.serviceSection,
+.testimonialSection {
+
+  background-color: #d7d9ce;
+}
+.skillSection h2,
+.projectSection h2,
+.serviceSection h2,
+.testimonialSection h2 {
+  border-bottom: 1px solid #222222;
+  color: #222222;
+}
+
+.oneProjectCard a {
+    color: #000;
+    background-color: rgb(209 209 209);
+  }
+  .testimonialsContainer {
+    
+    color: black;
+  }
+  footer {
+    background-color: #222222;
+
+  }
+  header .burgerMenu{
+
+    color: #222222;
+  }
