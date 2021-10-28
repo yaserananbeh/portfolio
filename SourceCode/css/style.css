@@ -585,14 +585,6 @@ footer > div > div.followMe {
   .projectsContainer {
     grid-template-columns: 1fr;
   }
-  .projectsContainer .oneProjectCard {
-    display: none;
-  }
-  .projectsContainer .oneProjectCard.first,
-  .projectsContainer .oneProjectCard.second,
-  .projectsContainer .oneProjectCard.third {
-    display: block;
-  }
   /*******************************************/
   /**********Skills Section responsive********************/
   .skillSection .skillsContainer {
@@ -655,4 +647,9 @@ section>.lightDarkBtn{
   font-size: x-large;
   transition: 0.3s;
   cursor: pointer;
+}
+/* ------------------------------------- */
+/* ---------------Sections to pages--------------- */
+.projectSection{
+  padding:3vh 0 5vh 0;
 }
