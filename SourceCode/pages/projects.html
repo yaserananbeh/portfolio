@@ -1,210 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Yaser Alananbeh" />
+    <meta
+      name="keywords"
+      content="portfolio, html, css,yaser, yaser alananbeh, bootstrap, developer, full,stack,js,javascript"
+    />
+    <meta name="description" content="This is the portfolio yaser alananbeh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaser's Portfolio</title>
+    <link rel="icon" href="../assets/images/mylogofinal.png" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" id="lightCssLink" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="author" content="Yaser Alananbeh" />
-  <meta name="keywords"
-    content="portfolio, html, css,yaser, yaser alananbeh, bootstrap, developer, full,stack,js,javascript" />
-  <meta name="description" content="This is the portfolio yaser alananbeh" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yaser's Portfolio</title>
-  <link rel="icon" href="../assets/images/mylogofinal.png" />
-  <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/style.css" id="lightCssLink" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <div class="burgerMenu">
-      <i class="fas fa-bars" id="burgerMenu"></i>
-    </div>
-    <div class="headerContainer">
-      <nav class="navbar-links">
-        <ul>
-          <li><a href="../index.html#skillSection">Skills</a></li>
-          <li><a href="../index.html#serviceSection">Services</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../assets/images/mylogofinal.png" alt="Logo" id="navLogo">
-        </a>
+  <body id="projectsPage">
+    <header>
+      <div class="burgerMenu">
+        <i class="fas fa-bars" id="burgerMenu"></i>
       </div>
-      <nav class="navbar-links">
-        <ul>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="#footer">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
-    <section class="lightDarkSection">
-      <button class="lightDarkBtn light"><i class="fas fa-adjust"></i></button>
-
-    </section>
-    <section class="projectSection" id="projectSection">
-      <h2>Projects</h2>
-      <div class="projectsContainer">
-        <div class="oneProjectCard first" data-aos="fade-up" data-aos-duration="2000">
-          <a href=" https://phoenixsquad.github.io/wardrobe/" target="_blank" rel="noopener noreferrer">
-            <div class="imageContainer">
-              <img src="../assets/images/wardrobe.png" alt="projectImage" class="projectImage">
-            </div>
-            <div class="textContainer">
-              <h3 class="title">
-                wardrobe
-              </h3>
-              <p class="projectDesc">
-                Online Fashion Store
-              </p>
-            </div>
+      <div class="headerContainer">
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="../index.html#skillSection">Skills</a></li>
+            <li><a href="../index.html#serviceSection">Services</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../assets/images/mylogofinal.png"
+              alt="Logo"
+              id="navLogo"
+            />
           </a>
         </div>
-        <div class="oneProjectCard second" data-aos="fade-up" data-aos-duration="2000">
-          <a href="https://home-gym.netlify.app/" target="_blank" rel="noopener noreferrer">
-            <div class="imageContainer">
-              <img src="../assets/images/homeGym.png" alt="projectImage" class="projectImage">
-            </div>
-            <div class="textContainer">
-              <h3 class="title">
-                HomeGym
-              </h3>
-              <p class="projectDesc">
-                Web application provides a gym equipments to the users to workout from home
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="oneProjectCard third" data-aos="fade-up" data-aos-duration="2000">
-          <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
-            <div class="imageContainer">
-              <img src="../assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
-            </div>
-            <div class="textContainer">
-              <h3 class="title">
-                Coming Soon ..
-              </h3>
-              <p class="projectDesc">
-                Check My GitHub Account To See More ..
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="oneProjectCard" data-aos="fade-up" data-aos-duration="2000">
-          <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
-            <div class="imageContainer">
-              <img src="../assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
-            </div>
-            <div class="textContainer">
-              <h3 class="title">
-                Coming Soon ..
-              </h3>
-              <p class="projectDesc">
-                Check My GitHub Account To See More ..
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="oneProjectCard" data-aos="fade-up" data-aos-duration="2000">
-          <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
-            <div class="imageContainer">
-              <img src="../assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
-            </div>
-            <div class="textContainer">
-              <h3 class="title">
-                Coming Soon ..
-              </h3>
-              <p class="projectDesc">
-                Check My GitHub Account To See More ..
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="oneProjectCard" data-aos="fade-up" data-aos-duration="2000">
-          <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
-            <div class="imageContainer">
-              <img src="../assets/images/comingSoonImage.png" alt="projectImage" class="projectImage">
-            </div>
-            <div class="textContainer">
-              <h3 class="title">
-                Coming Soon ..
-              </h3>
-              <p class="projectDesc">
-                Check My GitHub Account To See More ..
-              </p>
-            </div>
-          </a>
-        </div>
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="#footer">Contact Me</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-  </main>
-  <footer id="footer">
-    <div class="footerContainer">
-      <div class="aboutSection">
-        <div class="title">
-          <h3>About Me</h3>
-        </div>
-        <div class="aboutMeContent">
-          <div class="logo">
-            <img src="../assets/images/mylogofinal.png" alt="">
-            <p>Yaser Al-Ananbeh</p>
+    </header>
+    <main id="main">
+      <section class="lightDarkSection">
+        <button class="lightDarkBtn"><i class="fas fa-adjust"></i></button>
+      </section>
+      <section class="projectSection" id="projectSection">
+        <h2>Projects</h2>
+        <div class="projectsContainer">
+          <div
+            class="oneProjectCard first"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a
+              href=" https://phoenixsquad.github.io/wardrobe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/wardrobe.png"
+                  alt="projectImage"
+                  class="projectImage"
+                />
+              </div>
+              <div class="textContainer">
+                <h3 class="title">wardrobe</h3>
+                <p class="projectDesc">Online Fashion Store</p>
+              </div>
+            </a>
           </div>
+          <div
+            class="oneProjectCard second"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a
+              href="https://home-gym.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/homeGym.png"
+                  alt="projectImage"
+                  class="projectImage"
+                />
+              </div>
+              <div class="textContainer">
+                <h3 class="title">HomeGym</h3>
+                <p class="projectDesc">
+                  Web application provides a gym equipments to the users to
+                  workout from home
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="oneProjectCard third"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a
+              href="https://github.com/yaserananbeh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/comingSoonImage.png"
+                  alt="projectImage"
+                  class="projectImage"
+                />
+              </div>
+              <div class="textContainer">
+                <h3 class="title">Coming Soon ..</h3>
+                <p class="projectDesc">
+                  Check My GitHub Account To See More ..
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="oneProjectCard"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a
+              href="https://github.com/yaserananbeh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/comingSoonImage.png"
+                  alt="projectImage"
+                  class="projectImage"
+                />
+              </div>
+              <div class="textContainer">
+                <h3 class="title">Coming Soon ..</h3>
+                <p class="projectDesc">
+                  Check My GitHub Account To See More ..
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="oneProjectCard"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a
+              href="https://github.com/yaserananbeh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/comingSoonImage.png"
+                  alt="projectImage"
+                  class="projectImage"
+                />
+              </div>
+              <div class="textContainer">
+                <h3 class="title">Coming Soon ..</h3>
+                <p class="projectDesc">
+                  Check My GitHub Account To See More ..
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="oneProjectCard"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a
+              href="https://github.com/yaserananbeh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="imageContainer">
+                <img
+                  src="../assets/images/comingSoonImage.png"
+                  alt="projectImage"
+                  class="projectImage"
+                />
+              </div>
+              <div class="textContainer">
+                <h3 class="title">Coming Soon ..</h3>
+                <p class="projectDesc">
+                  Check My GitHub Account To See More ..
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footerContainer">
+        <div class="aboutSection">
+          <div class="title">
+            <h3>About Me</h3>
+          </div>
+          <div class="aboutMeContent">
+            <div class="logo">
+              <img src="../assets/images/mylogofinal.png" alt="" />
+              <p>Yaser Al-Ananbeh</p>
+            </div>
 
-          <div class="description">
-            <p>Web Developer Working Mainly To Create A Great Web Applications</p>
+            <div class="description">
+              <p>
+                Web Developer Working Mainly To Create A Great Web Applications
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contactMeSection">
+          <div class="title">
+            <h3>Send Me An Email</h3>
+          </div>
+          <form action="#">
+            <div class="nameContainer">
+              <label for="userName">Name</label>
+              <input type="text" name="name" id="userName" />
+            </div>
+            <div class="messageConatainer">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="20"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="followMe">
+          <div class="title">
+            <h3>Follow Me</h3>
+          </div>
+          <div class="iconsContainer">
+            <a
+              href="https://www.linkedin.com/in/yaser-al-ananbeh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://web.facebook.com/yaser.ananbeh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a
+              href="https://github.com/yaserananbeh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github-square"></i>
+            </a>
+            <a
+              href="mailto:yaser.alananbeh@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-at"></i>
+            </a>
           </div>
         </div>
       </div>
-      <div class="contactMeSection">
-        <div class="title">
-          <h3>Send Me An Email</h3>
-        </div>
-        <form action="#">
-          <div class="nameContainer">
-            <label for="userName">Name</label>
-            <input type="text" name="name" id="userName">
-          </div>
-          <div class="messageConatainer">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="20" rows="5"></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-      <div class="followMe">
-        <div class="title">
-          <h3>Follow Me</h3>
-        </div>
-        <div class="iconsContainer">
-          <a href="https://www.linkedin.com/in/yaser-al-ananbeh/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://web.facebook.com/yaser.ananbeh/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-          <a href="https://github.com/yaserananbeh" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github-square"></i>
-          </a>
-          <a href="mailto:yaser.alananbeh@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-at"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/app.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

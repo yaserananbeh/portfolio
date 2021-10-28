@@ -1,79 +1,133 @@
 "use strict";
-let firstCircle=document.getElementsByClassName("firstCircle")[0];
-let secondCircle=document.getElementsByClassName("secondCircle")[0];
-let ThirdCircle=document.getElementsByClassName("ThirdCircle")[0];
-let testimonial1=document.getElementsByClassName('testimonial')[0];
-let testimonial2=document.getElementsByClassName('testimonial')[1];
-let testimonial3=document.getElementsByClassName('testimonial')[2];
-let testimonialsContainer=document.getElementsByClassName('testimonialsContainer')[0];
 
-firstCircle.addEventListener("click" ,()=>{
-    testimonialsContainer.className="testimonialsContainer show";
-    firstCircle.style.color="teal";
-    secondCircle.style.color="black";
-    ThirdCircle.style.color="black";
-    testimonial1.className="testimonial testimonial1 active";
-    testimonial2.className="testimonial testimonial2";
-    testimonial3.className="testimonial testimonial3";
+/** distinguish the pages using the body id */
+const darkLightBtn = document.getElementsByClassName("lightDarkBtn")[0];
+if (localStorage.getItem("lightOrDark")) {
+  darkLightBtn.classList.add(localStorage.getItem("lightOrDark"));
+} else {
+  darkLightBtn.classList.add("dark");
+}
 
-})
-secondCircle.addEventListener("click" ,()=>{
-    firstCircle.style.color="black";
-    secondCircle.style.color="teal";
-    ThirdCircle.style.color="black";
-    testimonial1.className="testimonial testimonial1";
-    testimonial2.className="testimonial testimonial2  active";
-    testimonial3.className="testimonial testimonial3";
+let page = document.body.id;
+switch (page) {
+  case "indexPage":
+    indexPageFunc();
+    burgerMenuFunc();
+    lightDarkModeFunc();
+    break;
+  case "projectsPage":
+    burgerMenuFunc();
+    lightDarkModeFunc();
+    break;
 
-})
-ThirdCircle.addEventListener("click" ,()=>{
-    firstCircle.style.color="black";
-    secondCircle.style.color="black";
-    ThirdCircle.style.color="teal";
-    testimonial1.className="testimonial testimonial1";
-    testimonial2.className="testimonial testimonial2";
-    testimonial3.className="testimonial testimonial3 active";
+  default:
+    console.log("not recognized page");
+    break;
+}
 
-})
-/****************************************** */
-/************* Burger Menu ************** */
-/****************************************** */
-const toggleButton = document.getElementById('burgerMenu')
-const header=document.getElementsByTagName('header')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-const navbarLinks1 = document.getElementsByClassName('navbar-links')[1]
+function indexPageFunc() {
+  /******************************************** */
+  /*******testimonial section functionality******************** */
+  let firstCircle = document.getElementsByClassName("firstCircle")[0];
+  let secondCircle = document.getElementsByClassName("secondCircle")[0];
+  let ThirdCircle = document.getElementsByClassName("ThirdCircle")[0];
+  let testimonial1 = document.getElementsByClassName("testimonial")[0];
+  let testimonial2 = document.getElementsByClassName("testimonial")[1];
+  let testimonial3 = document.getElementsByClassName("testimonial")[2];
+  let testimonialsContainer = document.getElementsByClassName(
+    "testimonialsContainer"
+  )[0];
 
-// console.log(toggleButton)
+  firstCircle.addEventListener("click", () => {
+    testimonialsContainer.className = "testimonialsContainer show";
+    firstCircle.style.color = "teal";
+    secondCircle.style.color = "black";
+    ThirdCircle.style.color = "black";
+    testimonial1.className = "testimonial testimonial1 active";
+    testimonial2.className = "testimonial testimonial2";
+    testimonial3.className = "testimonial testimonial3";
+  });
+  secondCircle.addEventListener("click", () => {
+    firstCircle.style.color = "black";
+    secondCircle.style.color = "teal";
+    ThirdCircle.style.color = "black";
+    testimonial1.className = "testimonial testimonial1";
+    testimonial2.className = "testimonial testimonial2  active";
+    testimonial3.className = "testimonial testimonial3";
+  });
+  ThirdCircle.addEventListener("click", () => {
+    firstCircle.style.color = "black";
+    secondCircle.style.color = "black";
+    ThirdCircle.style.color = "teal";
+    testimonial1.className = "testimonial testimonial1";
+    testimonial2.className = "testimonial testimonial2";
+    testimonial3.className = "testimonial testimonial3 active";
+  });
+}
+function burgerMenuFunc() {
+  /****************************************** */
+  /************* Burger Menu ************** */
+  /****************************************** */
+  const toggleButton = document.getElementById("burgerMenu");
+  const header = document.getElementsByTagName("header")[0];
+  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+  const navbarLinks1 = document.getElementsByClassName("navbar-links")[1];
 
-header.addEventListener('click', () => {
-    // console.log(toggleButton);
-    // console.log("Yaser");
-    navbarLinks.classList.toggle('active')
-    navbarLinks1.classList.toggle('active')
-})
-
+  header.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+    navbarLinks1.classList.toggle("active");
+  });
+}
 /****************************************** */
 /************* Light\Dark toggle ************** */
 /****************************************** */
-const darkLightBtn=document.getElementsByClassName("lightDarkBtn")[0]
-const lightCssLink=document.getElementById("lightCssLink")
-const navLogo=document.getElementById("navLogo")
-darkLightBtn.addEventListener("click",function(){
-    if(darkLightBtn.classList=="lightDarkBtn light"){
-        lightCssLink.href="./css/light.css"
-        navLogo.src="./assets/images/Mylogo.png"
-        // darkLightBtn.style.transform = "rotate(180deg)"
-        darkLightBtn.style.transform = "scaleX(-1)"
-        darkLightBtn.style.color = "#00c2cb"
-        darkLightBtn.classList="lightDarkBtn dark";
-        
+function lightDarkModeFunc() {
+  const darkLightBtn = document.getElementsByClassName("lightDarkBtn")[0];
+
+  const lightCssLink = document.getElementById("lightCssLink");
+  const navLogo = document.getElementById("navLogo");
+  if (page == "indexPage") {
+    darkLightBtn.addEventListener("click", toggleMode);
+    function toggleMode() {
+      if (darkLightBtn.classList == "lightDarkBtn light") {
+        localStorage.setItem("lightOrDark", "light");
+        lightCssLink.href = "./css/light.css";
+        navLogo.src = "./assets/images/Mylogo.png";
+        darkLightBtn.style.transform = "scaleX(-1)";
+        darkLightBtn.style.color = "#00c2cb";
+        darkLightBtn.classList = "lightDarkBtn dark";
+      } else {
+        localStorage.setItem("lightOrDark", "dark");
+
+        lightCssLink.href = "./css/style.css";
+        navLogo.src = "./assets/images/mylogofinal.png";
+        darkLightBtn.style.transform = "scaleX(1)";
+        darkLightBtn.style.color = "white";
+        darkLightBtn.classList = "lightDarkBtn light";
+      }
     }
-    else{
-        lightCssLink.href="./css/style.css"
-        navLogo.src="./assets/images/mylogofinal.png"
-        // darkLightBtn.style.transform = "rotate(0deg)"
-        darkLightBtn.style.transform = "scaleX(1)"
-        darkLightBtn.style.color = "white"
-        darkLightBtn.classList="lightDarkBtn light";
+    toggleMode();
+  } else {
+    darkLightBtn.addEventListener("click", toggleMode);
+    function toggleMode() {
+      if (darkLightBtn.classList == "lightDarkBtn light") {
+        localStorage.setItem("lightOrDark", "light");
+
+        lightCssLink.href = "../css/light.css";
+        navLogo.src = "../assets/images/Mylogo.png";
+        darkLightBtn.style.transform = "scaleX(-1)";
+        darkLightBtn.style.color = "#00c2cb";
+        darkLightBtn.classList = "lightDarkBtn dark";
+      } else {
+        localStorage.setItem("lightOrDark", "dark");
+
+        lightCssLink.href = "../css/style.css";
+        navLogo.src = "../assets/images/mylogofinal.png";
+        darkLightBtn.style.transform = "scaleX(1)";
+        darkLightBtn.style.color = "white";
+        darkLightBtn.classList = "lightDarkBtn light";
+      }
     }
-})
+    toggleMode();
+  }
+}
