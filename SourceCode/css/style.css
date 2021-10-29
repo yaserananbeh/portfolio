@@ -649,3 +649,24 @@ section > .lightDarkBtn {
 .projectSection {
   padding: 3vh 0 5vh 0;
 }
+/*****************************************
+/************ cv button***********************/
+.heroImageContent a button {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: large;
+    cursor: pointer;
+    margin: 3vh 0;
+    border: none;
+    color: #d7d9ce;
+    background-color: #222222;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(17 ,157, 164);
+    font-weight: 800;
+
+}
+.heroImageContent a button:hover {
+  background-color: rgba(17, 157, 164, 1);
+  color: #d7d9ce;
+
+}
