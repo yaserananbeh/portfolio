@@ -19,6 +19,11 @@ switch (page) {
     burgerMenuFunc();
     lightDarkModeFunc();
     break;
+  case "contactPage":
+    burgerMenuFunc();
+    lightDarkModeFunc();
+    contactSubmitFormFunc();
+    break;
 
   default:
     console.log("not recognized page");
@@ -129,5 +134,37 @@ function lightDarkModeFunc() {
       }
     }
     toggleMode();
+  }
+}
+function contactSubmitFormFunc(){
+  let contactArray=[];
+let previousData=JSON.parse(localStorage.getItem("contactUsFormData"))
+  if (previousData) {
+    // console.log('there"s previous data');
+    previousData.forEach(element => {
+      contactArray.push(element)
+    });
+    contactArray.push(previousData)
+  }
+  class Form{
+    constructor(name,email,message){
+      this.name=name;
+      this.email=email;
+      this.message=message
+    }
+  }
+  let form=document.querySelector(".contactFormContainer form")
+
+  form.addEventListener("submit",formSubmit)
+  function formSubmit(e){
+    e.preventDefault();
+    let name=e.target.name.value;
+    let email=e.target.email.value;
+    let message=e.target.message.value;
+
+    let newFormData=new Form(name,email,message);
+    contactArray.push(newFormData)
+    localStorage.setItem("contactUsFormData",JSON.stringify(contactArray))
+    form.reset();
   }
 }
